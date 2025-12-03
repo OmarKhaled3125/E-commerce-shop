@@ -1,16 +1,41 @@
-# React + Vite
+# 🛒 Modern E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+> A modern, responsive, and fully functional e-commerce frontend simulation built with React and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a React-based Single Page Application (SPA) that simulates a real-world shopping experience. It fetches real-time data from the FakeStore API and implements advanced frontend logic including global state management, routing, and a simulated asynchronous checkout process.
 
-## Expanding the ESLint configuration
+The design focuses on **"Glassmorphism"** aesthetics, smooth transitions, and a clean, minimalist UI suitable for modern SaaS products.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Key Features
+* **Dynamic Data Fetching:** Products are fetched from an external API (FakeStoreAPI) and managed via React Hooks.
+* **Global State Management:** Shopping cart state is "lifted up" to the App level, allowing seamless data flow between the Product List, Navbar (Badge), and Cart Page.
+* **Smart Routing:**
+    * **Home:** Displays a hero section and a limited "Featured" slice of products.
+    * **Shop:** Displays the full product catalog.
+    * **Cart:** A split-screen layout with quantity controls and sticky order summary.
+* **Simulated Checkout Flow:** A custom modal that handles form inputs, simulates an API payment delay (loading spinners), and handles success states.
+* **Modern UI/UX:**
+    * Sticky Glassmorphic Navbar.
+    * Hover lift effects and image zooms.
+    * Gradient buttons and text.
+    * Responsive Grid Layouts.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js (Vite)
+* **Styling:** Tailwind CSS (Utility-first CSS framework)
+* **Routing:** React Router DOM v6
+* **Icons:** HeroIcons / Inline SVG
+* **Data Source:** [FakeStore API](https://fakestoreapi.com/)
+* **Deployment:** Vercel
+cd ecommerce-portfolio-demo
